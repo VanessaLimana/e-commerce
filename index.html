@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="public/assets/css/common/common.css">
+    <link rel="stylesheet" href="public/assets/css/layout/layout.css">
+    <link rel="stylesheet" href="public/assets/css/component/banner.css">
+    <link rel="stylesheet" href="public/assets/css/component/product.css">
+    <link rel="stylesheet" href="public/assets/css/component/form-search.css">
+</head>
+
+<body>
+    <svg class="svg-symbol" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="svg-profile" viewBox="0 0 563.43 563.43">
+            <path
+                d="M280.79 314.559c83.266 0 150.803-67.538 150.803-150.803S364.055 13.415 280.79 13.415 129.987 80.953 129.987 163.756s67.537 150.803 150.803 150.803zm0-261.824c61.061 0 111.021 49.959 111.021 111.021s-49.96 111.02-111.021 111.02-111.021-49.959-111.021-111.021 49.959-111.02 111.021-111.02zM19.891 550.015h523.648c11.102 0 19.891-8.789 19.891-19.891 0-104.082-84.653-189.198-189.198-189.198H189.198C85.116 340.926 0 425.579 0 530.124c0 11.102 8.789 19.891 19.891 19.891zm169.307-169.307h185.034c75.864 0 138.313 56.436 148.028 129.524H41.17c9.714-72.625 72.164-129.524 148.028-129.524z" />
+        </symbol>
+        <symbol id="svg-search" viewBox="0 0 56.966 56.966">
+            <path
+                d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0 0 46.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 0 0 .083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" />
+        </symbol>
+        <symbol id="svg-shopping-cart" viewBox="0 -31 512 512">
+            <path
+                d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0" />
+        </symbol>
+    </svg>
+    <header class="header">
+        <div class="wrapper">
+            <div class="row no-gutters justify-content-center align-items-center header-site">
+                <div class="col col-md-3 d-flex justify-content-start align-items-center">
+                    <h1 class="title">
+                        <a href="#" class="link">
+                            
+                        </a>
+                    </h1>
+                </div>
+
+                <div class="col col-md-6 d-flex justify-content-center align-items-center">
+                    <form action="" class="form form-search">
+                        <input type="search" class="field field-search" id="search" name="field-search"
+                            placeholder="Pesquise Aqui...">
+                        <button class="btn btn-search">
+                            <svg class="svg-search">
+                                <use xlink:href="#svg-search" />
+                            </svg>
+                            Pesquisar
+                        </button>
+                    </form>
+                </div>
+
+                <div class="col col-md-3 d-flex justify-content-between align-items-center">
+                    <a href="#" class="link login">
+                        <svg class="svg-profile">
+                            <use xlink:href="#svg-profile" />
+                        </svg>
+                        Login
+                    </a>
+
+                    <a href="#" class="link login">
+                        <svg class="svg-shopping-cart">
+                            <use xlink:href="#svg-shopping-cart" />
+                        </svg>
+                        <span class="txt txt-cart">Carrinho</span>
+                        <saan class="txt txt-quantity">(1)</saan>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row no-gutters justify-content-center align-items-center header-menu">
+            <div class="col d-flex justify-content-center align-items-center">
+                <nav class="nav">
+                    <a href="#promocao" class="link">Promoção</a>
+                    <a href="#lancamento" class="link">Lançamento</a>
+                    <a href="#mais-vendas" class="link">Mais Vendidos</a>
+                    <a href="#outlet" class="link">Outlet</a>
+                    <a href="#contato" class="link">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main  no-gutters">
+        <section class="banner  no-gutters">
+            <a href="#" class="img-background"
+                style="background-image: url('public/uploads/banners/fullbanner.jpg')"></a>
+        </section>
+        <section class="showcase">
+            <div class="wrapper">
+
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col">
+                        <h2 class="title title2 text-center">Vitrine Destaque</h2>
+                    </div>
+                </div>
+
+                <ul class="row justify-content-start align-items-center list list-showcase">
+                    <li class="col-12 col-md-6 col-lg-3 item item-product product">
+                        <a href="" class="link">
+                            <img src="public/uploads/products/product.jpg" alt="" class="img img-product">
+                        </a>
+                        <div class="box d-flex align-items-center justify-content-center">
+                            <div class="box-info">
+                                <h3 class="title text-center title3">
+                                    Produto 
+                                </h3>
+                                <h4 class="title text-center title4">
+                                    R$ 1000,00
+                                </h4>
+                                <h5 class="title text-center title5">
+                                    <span>ou em</span>
+                                    <span>10x</span>
+                                    <span>de</span>
+                                    <span>R$100,00</span>
+                                    <span>sem juros</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-buy">
+                            <svg class="svg-shopping-cart">
+                                <use xlink:href="#svg-shopping-cart" />
+                            </svg>
+                            Comprar
+                        </a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-3 item item-product product">
+                        <a href="" class="link">
+                            <img src="public/uploads/products/product.jpg" alt="" class="img img-product">
+                        </a>
+                        <div class="box d-flex align-items-center justify-content-center">
+                            <div class="box-info">
+                                <h3 class="title text-center title3">
+                                    Produto 
+                                </h3>
+                                <h4 class="title text-center title4">
+                                    R$ 1000,00
+                                </h4>
+                                <h5 class="title text-center title5">
+                                    <span>ou em</span>
+                                    <span>10x</span>
+                                    <span>de</span>
+                                    <span>R$100,00</span>
+                                    <span>sem juros</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-buy">
+                            <svg class="svg-shopping-cart">
+                                <use xlink:href="#svg-shopping-cart" />
+                            </svg>
+                            Comprar
+                        </a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-3 item item-product product">
+                        <a href="" class="link">
+                            <img src="public/uploads/products/product.jpg" alt="" class="img img-product">
+                        </a>
+                        <div class="box d-flex align-items-center justify-content-center">
+                            <div class="box-info">
+                                <h3 class="title text-center title3">
+                                    Produto Presença
+                                </h3>
+                                <h4 class="title text-center title4">
+                                    R$ 1000,00
+                                </h4>
+                                <h5 class="title text-center title5">
+                                    <span>ou em</span>
+                                    <span>10x</span>
+                                    <span>de</span>
+                                    <span>R$100,00</span>
+                                    <span>sem juros</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-buy">
+                            <svg class="svg-shopping-cart">
+                                <use xlink:href="#svg-shopping-cart" />
+                            </svg>
+                            Comprar
+                        </a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-3 item item-product product">
+                        <a href="" class="link">
+                            <img src="public/uploads/products/product.jpg" alt="" class="img img-product">
+                        </a>
+                        <div class="box d-flex align-items-center justify-content-center">
+                            <div class="box-info">
+                                <h3 class="title text-center title3">
+                                    Produto 
+                                </h3>
+                                <h4 class="title text-center title4">
+                                    R$ 1000,00
+                                </h4>
+                                <h5 class="title text-center title5">
+                                    <span>ou em</span>
+                                    <span>10x</span>
+                                    <span>de</span>
+                                    <span>R$100,00</span>
+                                    <span>sem juros</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-buy">
+                            <svg class="svg-shopping-cart">
+                                <use xlink:href="#svg-shopping-cart" />
+                            </svg>
+                            Comprar
+                        </a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-3 item item-product product">
+                        <a href="" class="link">
+                            <img src="public/uploads/products/product.jpg" alt="" class="img img-product">
+                        </a>
+                        <div class="box d-flex align-items-center justify-content-center">
+                            <div class="box-info">
+                                <h3 class="title text-center title3">
+                                    Produto Presença
+                                </h3>
+                                <h4 class="title text-center title4">
+                                    R$ 1000,00
+                                </h4>
+                                <h5 class="title text-center title5">
+                                    <span>ou em</span>
+                                    <span>10x</span>
+                                    <span>de</span>
+                                    <span>R$100,00</span>
+                                    <span>sem juros</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-buy">
+                            <svg class="svg-shopping-cart">
+                                <use xlink:href="#svg-shopping-cart" />
+                            </svg>
+                            Comprar
+                        </a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-3 item item-product product">
+                        <a href="" class="link">
+                            <img src="public/uploads/products/product.jpg" alt="" class="img img-product">
+                        </a>
+                        <div class="box d-flex align-items-center justify-content-center">
+                            <div class="box-info">
+                                <h3 class="title text-center title3">
+                                    Produto 
+                                </h3>
+                                <h4 class="title text-center title4">
+                                    R$ 1000,00
+                                </h4>
+                                <h5 class="title text-center title5">
+                                    <span>ou em</span>
+                                    <span>10x</span>
+                                    <span>de</span>
+                                    <span>R$100,00</span>
+                                    <span>sem juros</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-buy">
+                            <svg class="svg-shopping-cart">
+                                <use xlink:href="#svg-shopping-cart" />
+                            </svg>
+                            Comprar
+                        </a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-3 item item-product product">
+                        <a href="" class="link">
+                            <img src="public/uploads/products/product.jpg" alt="" class="img img-product">
+                        </a>
+                        <div class="box d-flex align-items-center justify-content-center">
+                            <div class="box-info">
+                                <h3 class="title text-center title3">
+                                    Produto Presença
+                                </h3>
+                                <h4 class="title text-center title4">
+                                    R$ 1000,00
+                                </h4>
+                                <h5 class="title text-center title5">
+                                    <span>ou em</span>
+                                    <span>10x</span>
+                                    <span>de</span>
+                                    <span>R$100,00</span>
+                                    <span>sem juros</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-buy">
+                            <svg class="svg-shopping-cart">
+                                <use xlink:href="#svg-shopping-cart" />
+                            </svg>
+                            Comprar
+                        </a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-3 item item-product product">
+                        <a href="" class="link">
+                            <img src="public/uploads/products/product.jpg" alt="" class="img img-product">
+                        </a>
+                        <div class="box d-flex align-items-center justify-content-center">
+                            <div class="box-info">
+                                <h3 class="title text-center title3">
+                                    Produto Presença
+                                </h3>
+                                <h4 class="title text-center title4">
+                                    R$ 1000,00
+                                </h4>
+                                <h5 class="title text-center title5">
+                                    <span>ou em</span>
+                                    <span>10x</span>
+                                    <span>de</span>
+                                    <span>R$100,00</span>
+                                    <span>sem juros</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-buy">
+                            <svg class="svg-shopping-cart">
+                                <use xlink:href="#svg-shopping-cart" />
+                            </svg>
+                            Comprar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="banner-footer">
+            <div class="wrapper">
+                <ul class="list list-showcase d-flex align-items-center justify-content-between">
+                    <li class="item item-product">
+                        <a href="#" class="img-background"
+                            style="background-image: url('public/uploads/banners/banner-footer-1.jpg')">
+                        </a>
+                    </li>
+                    <li class="item item-product">
+                        <a href="#" class="img-background"
+                            style="background-image: url('public/uploads/banners/banner-footer-2.jpg')">
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="row no-gutters footer-logo">
+            <div class="col d-flex justify-content-center align-items-center">
+                <a href="#" class="link">
+                   </a>
+            </div>
+        </div>
+        <div class="row no-gutters no-gutters disclaimer">
+            <div class="col d-flex justify-content-center align-items-center">
+                <h6 class="title text-center">
+                    <span class="copyright">
+                        </span>
+                    <span class="development">
+                        feito por: Vanessa Limana - teste de e-commerce loja de sapatos
+                    </span>
+                </h6>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
