@@ -1,4 +1,4 @@
-# e-commerce
+# E-commerce
 E-commerce loja de sapatos!
 
 ![Capturar1](https://user-images.githubusercontent.com/41017772/109426221-38036280-79cb-11eb-94fd-f412bd9ac05a.PNG)
